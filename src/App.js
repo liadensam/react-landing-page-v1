@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import {BrowserRouter} from "react-router-dom";
 
 function App() {
+
   const navbarLinks = [
     {url:"#", title: "Home" },
     {url:"#about",title: "About" },
