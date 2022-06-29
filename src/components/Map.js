@@ -13,6 +13,7 @@ const Map = ({ flipped }) => {
       return (
         <>
           <div className="divider--container" id="map"><span className="divider">Freedges locations 🇮🇸</span></div>
+          // eslint-disable-next-line
           <iframe className="slider__map" src="https://www.google.com/maps/d/embed?mid=1qXdtLJj7KMNMWCSDpKUxLLUc5jBNiBE&ehbc=2E312F" width="640" height="480" aria-hidden="false" tabIndex={8}></iframe>
         </>
       );
