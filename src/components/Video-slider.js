@@ -12,7 +12,6 @@ const VideoSlider = ({ title, description, flipped }) => {
     if (!flipped) {
       return (
         <>
-        // eslint-disable-next-line
         <iframe className="slider__image" width="640" height="423" src="https://www.visir.is/player/03c2139f-1933-4e5f-bd80-a1e5e330d751-1641411717675" frameborder="0" scrolling="no" seamless="seamless" allowfullscreen></iframe>
           <div className="slider__content">
             <h2 className="slider__title" tabIndex={4} id="donate">{title}</h2>
@@ -58,7 +57,6 @@ const VideoSlider = ({ title, description, flipped }) => {
 
             <p className="slider__description-video sm" tabIndex={7}>Takk. ♡</p>
           </div>
-          // eslint-disable-next-line
           <iframe className="slider__image" width="640" height="423" src="https://www.visir.is/player/03c2139f-1933-4e5f-bd80-a1e5e330d751-1641411717675" frameborder="0" scrolling="no" seamless="seamless" allowfullscreen></iframe>
         </>
       );
