@@ -13,7 +13,7 @@ const Navbar = ({ navbarLinks }) => {
 
   return (
     <nav className="navbar">
-      <span className="navbar__logo" tabIndex={1}>freedge / frisskaupur</span>
+      <span className="navbar__logo" tabIndex={1}>freedge</span>
       {menuClicked ? (
         <FiX size={25} className={"navbar__menu"} onClick={toggleMenuClick} />
       ) : (
