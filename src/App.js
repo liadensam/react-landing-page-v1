@@ -1,35 +1,39 @@
 import "./App.css";
-import travel_01 from "./assets/travel-01.jpg";
-import travel_02 from "./assets/travel-02.jpg";
-import travel_03 from "./assets/travel-03.jpg";
+import community6 from "./assets/community6.jpg";
+import frisskapur from "./assets/frisskapur1.jpg";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Slider from "./components/Slider";
+import Map from "./components/Map";
+import VideoSlider from "./components/Video-slider";
+import Footer from "./components/Footer";
+import {BrowserRouter} from "react-router-dom";
 
 function App() {
   const navbarLinks = [
-    { url: "#", title: "Home" },
-    { url: "#", title: "Trips" },
-    { url: "#", title: "Rewards" },
+    {url:"#", title: "Home" },
+    {url:"#about",title: "About" },
+    {url:"#donate",title: "Donate" },
+    {url:"#map",title: "Map" },
   ];
 
   return (
     <div className="App">
+      <BrowserRouter>
       <Navbar navbarLinks={navbarLinks} />
-      <Hero imageSrc={travel_01} />
+      <Hero imageSrc={community6} />
       <Slider
-        imageSrc={travel_02}
-        title={"Be an explorer."}
-        subtitle={
-          "Our platform offers a wide variety of unique travel locations!"
-        }
+        imageSrc={frisskapur}
+        title={"About the project"}
       />
-      <Slider
-        imageSrc={travel_03}
-        title={"Memories for a lifetime."}
-        subtitle={"Your dream vacation is only a few clicks away."}
+       <VideoSlider
         flipped={true}
+        title={"How to donate"}
       />
+      <Map/>
+      <Footer/>
+      </BrowserRouter>
+    
     </div>
   );
 }

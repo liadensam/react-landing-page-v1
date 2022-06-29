@@ -15,7 +15,7 @@
 }
 
 .slider__image {
-  width: 60%;
+  width: 50%;
 }
 
 .slider__content {
@@ -25,20 +25,83 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  text-align: center;
+  font-size: 1rem;
 }
 
-.slider__title {
+.slider__title-about {
   text-align: center;
+  font-family: 'Nanum Pen Script';
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
+
+.slider__description {
+  text-align: left;
+  padding: 1rem;
+  line-height: 1.5rem;
+}
+
+.slider__description-about {
+  text-align: left;
+  padding: 1rem 1rem .1rem 1rem;
+  line-height: 1.5rem;
+}
+
+.span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.link--email {
+  text-decoration: none;
+}
+
+
+.link:link {
+  font-style: normal;
+  text-decoration: none;
+  color: rgb(255, 0, 106);
+}
+
+.link:active {
+  color: rgb(255, 0, 106);
+}
+
+.link:visited {
+  color: rgb(77, 133, 243);
+}
+
+.link:hover{
+  color: rgb(255, 0, 106);
+}
+
+
 
 @media screen and (max-width: 800px) {
   .slider {
     flex-direction: column;
-    background-color: rgb(236, 236, 236);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+  }
+
+  .slider__content {
+    font-size: 0.9rem;
   }
 
   .slider__image {
     width: 100%;
   }
+
+  .slider__title-about {
+    font-size: 2rem;
+  }
 }
+
+@media screen and (max-width: 400px) {
+  .slider__content {
+    font-size: 0.8rem;
+  }
+}
+

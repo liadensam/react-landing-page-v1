@@ -1,0 +1,54 @@
+.map-slider{
+
+    align-items: center;
+  
+    opacity: 0;
+    /* transform: scale(92%); */
+    transition: 2s;
+  }
+  
+  .map-slider--zoom{
+    opacity: 1;
+    /* transform: scale(100%); */
+    transition: 2s;
+  }
+  
+  .slider__map {
+    width: 100vw;
+  }
+
+  .divider--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+    padding-bottom: 1.5rem;
+    opacity: 1;
+    transition: 0.2s;
+
+}
+
+.divider {
+    font-family: 'Nanum Pen Script';
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .divider {
+        font-size: 2rem;
+    }
+}
+
+  
+  @media screen and (max-width: 800px) {
+    .map-slider {
+      flex-direction: column;
+      background-color: rgb(252, 252, 242);
+    }
+  
+    .slider__map {
+      width: 100%;
+    }
+
+  }
+  

@@ -1,0 +1,128 @@
+.slider {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  
+    opacity: 0;
+    transform: scale(85%);
+    transition: 2s;
+  }
+  
+  .slider--zoom {
+    opacity: 1;
+    transform: scale(100%);
+    transition: 2s;
+  }
+  
+  .slider__image {
+    width: 50%;
+  }
+  
+  .slider__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+  
+  .slider__title {
+    text-align: center;
+    font-family: 'Nanum Pen Script';
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+  
+  .slider__description-video {
+    text-align: left;
+    list-style-type: none;
+    padding-top: 2.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .slider__description-video-note {
+    list-style-type: none;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+
+  .video-slider__list {
+    text-align: left;
+  }
+
+  .video-slider__list li {
+    list-style-type: none;
+  }
+
+  .span {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .link:link {
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(255, 0, 106);
+  }
+  
+  .link--email {
+    text-decoration: none;
+  }
+  
+  
+  .link:visited {
+    color: rgb(77, 133, 243);
+  }
+  
+  .link:hover{
+    color: rgb(255, 0, 106);
+  }
+
+  .link {
+    font-size: 0.85rem;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .slider__content {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .slider {
+      flex-direction: column;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border-radius: 5px;
+      /* border: 1px solid rgb(255, 217, 19); */
+    }
+
+    .slider__description-video-note {
+      font-size: 0.7rem;
+    }
+    
+
+    .sm {
+      padding-bottom: 3rem;
+    }
+
+    .slider__title {
+      font-size: 2rem;
+    }
+
+
+    .slider__image {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .slider__content {
+      font-size: 0.8rem;
+    }
+  }
+
+  
