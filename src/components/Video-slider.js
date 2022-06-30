@@ -21,7 +21,7 @@ const VideoSlider = ({ title, description, flipped }) => {
                 <li>↝ Please no meat, fish, eggs, or dairy (health risk)</li>
                 <li>↝ Label the food if homemade</li>
             </ul>
-            <ul  className="video-slider__list">
+            <ul  className="video-slider__list" tabIndex={6}>
             <li className="slider__description-video">👉 Please <span className="span">label</span> homemade food donations with:</li>
                 <li>↝ <span className="span">donation date</span></li>
                 <li>↝ <span className="span">name</span> and <span className="span">phone</span> of food donor</li>
@@ -44,7 +44,7 @@ const VideoSlider = ({ title, description, flipped }) => {
                 <li>↝ Please no meat, fish, eggs, or dairy (health risk)</li>
                 <li>↝ Label the food if homemade</li>
             </ul>
-            <ul  className="video-slider__list">
+            <ul  className="video-slider__list" tabIndex={6}>
             <li className="slider__description-video">👉 Please <span className="span">label</span> homemade food donations with:</li>
                 <li>↝ <span className="span">donation date</span></li>
                 <li>↝ <span className="span">name</span> and <span className="span">phone</span> of food donor</li>
