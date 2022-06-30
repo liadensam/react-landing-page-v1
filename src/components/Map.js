@@ -12,8 +12,8 @@ const Map = ({ flipped }) => {
   
       return (
         <>
-          <div className="divider--container" id="map"><span className="divider" tabIndex={8}>Freedges locations 🇮🇸</span></div>
-          <iframe className="slider__map" src="https://www.google.com/maps/d/embed?mid=1qXdtLJj7KMNMWCSDpKUxLLUc5jBNiBE&ehbc=2E312F" width="640" height="480" aria-hidden="false" tabIndex={9}></iframe>
+          <div className="divider--container" id="map"><span className="divider" tabIndex={25}>Freedges locations 🇮🇸</span></div>
+          <iframe className="slider__map" src="https://www.google.com/maps/d/embed?mid=1qXdtLJj7KMNMWCSDpKUxLLUc5jBNiBE&ehbc=2E312F" width="640" height="480" aria-hidden="false" tabIndex={26}></iframe>
         </>
       );
     
